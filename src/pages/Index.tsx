@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
+import Parcours from "@/components/Parcours";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import FloatingContactButton from "@/components/FloatingContactButton";
@@ -39,6 +40,7 @@ const Index = () => {
         <About />
         <Projects projects={projects} />
         <Skills />
+        <Parcours />
         <Contact />
       </main>
       <Footer />

@@ -46,20 +46,35 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
 
         {/* Carrousel d'images */}
         {project.images.length > 0 && (
-          <div className="relative h-96 rounded-lg overflow-hidden bg-muted">
-            <img
-              src={project.images[currentImage]}
-              alt={`${project.title} - Image ${currentImage + 1}`}
-              className="w-full h-full object-cover"
-            />
+          <div className="relative h-96 rounded-lg overflow-hidden bg-muted group">
+            {/* Image principale avec transition */}
+            <div className="relative w-full h-full">
+              {project.images.map((image, index) => (
+                <div
+                  key={index}
+                  className={`absolute inset-0 transition-opacity duration-500 ${
+                    index === currentImage ? "opacity-100" : "opacity-0"
+                  }`}
+                >
+                  <img
+                    src={image}
+                    alt={`${project.title} - Image ${index + 1}`}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              ))}
+            </div>
             
+            {/* Navigation - visible seulement s'il y a plusieurs images */}
             {project.images.length > 1 && (
               <>
+                {/* Flèches de navigation */}
                 <Button
                   variant="ghost"
                   size="icon"
                   onClick={prevImage}
-                  className="absolute left-2 top-1/2 -translate-y-1/2 bg-background/80 hover:bg-background"
+                  className="absolute left-2 top-1/2 -translate-y-1/2 bg-background/90 hover:bg-background opacity-0 group-hover:opacity-100 transition-opacity shadow-card"
+                  aria-label="Image précédente"
                 >
                   <ChevronLeft className="h-6 w-6" />
                 </Button>
@@ -67,24 +82,31 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                   variant="ghost"
                   size="icon"
                   onClick={nextImage}
-                  className="absolute right-2 top-1/2 -translate-y-1/2 bg-background/80 hover:bg-background"
+                  className="absolute right-2 top-1/2 -translate-y-1/2 bg-background/90 hover:bg-background opacity-0 group-hover:opacity-100 transition-opacity shadow-card"
+                  aria-label="Image suivante"
                 >
                   <ChevronRight className="h-6 w-6" />
                 </Button>
 
-                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+                {/* Indicateurs de position */}
+                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 bg-background/80 px-3 py-2 rounded-full backdrop-blur-sm">
                   {project.images.map((_, index) => (
                     <button
                       key={index}
                       onClick={() => setCurrentImage(index)}
-                      className={`w-2 h-2 rounded-full transition-all ${
+                      className={`transition-all duration-300 rounded-full ${
                         index === currentImage
-                          ? "bg-accent w-6"
-                          : "bg-background/50"
+                          ? "bg-accent w-8 h-3"
+                          : "bg-muted hover:bg-accent/50 w-3 h-3"
                       }`}
-                      aria-label={`Image ${index + 1}`}
+                      aria-label={`Aller à l'image ${index + 1}`}
                     />
                   ))}
+                </div>
+
+                {/* Compteur d'images */}
+                <div className="absolute top-4 right-4 bg-background/90 px-3 py-1 rounded-full text-sm font-medium backdrop-blur-sm">
+                  {currentImage + 1} / {project.images.length}
                 </div>
               </>
             )}
