@@ -48,16 +48,28 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <ul className="hidden md:flex items-center gap-8">
-            {navItems.map((item) => (
-              <li key={item.id}>
-                <button
-                  onClick={() => scrollToSection(item.id)}
-                  className="text-foreground hover:text-accent transition-colors font-medium"
-                >
-                  {item.label}
-                </button>
-              </li>
-            ))}
+            {navItems
+              .filter((item) => item.id !== "contact")
+              .map((item) => (
+                <li key={item.id}>
+                  <button
+                    onClick={() => scrollToSection(item.id)}
+                    className="text-foreground hover:text-accent transition-colors font-medium"
+                  >
+                    {item.label}
+                  </button>
+                </li>
+              ))}
+            <li>
+              <Button
+                variant="default"
+                size="lg"
+                className="px-8 bg-primary hover:bg-primary/90 text-primary-foreground"
+                onClick={() => scrollToSection("contact")}
+              >
+                Me contacter
+              </Button>
+            </li>
           </ul>
 
           {/* Mobile Menu Button */}
