@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { Button } from "./ui/button";
-import { Input } from "./ui/input";
-import { Textarea } from "./ui/textarea";
-import { useToast } from "@/hooks/use-toast";
-import { Send } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { toast } from "sonner";
+import { Mail, Send } from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -11,102 +12,109 @@ const Contact = () => {
     email: "",
     message: "",
   });
-  const { toast } = useToast();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Validation simple
+    // Basic validation
     if (!formData.name || !formData.email || !formData.message) {
-      toast({
-        title: "Erreur",
-        description: "Veuillez remplir tous les champs.",
-        variant: "destructive",
-      });
+      toast.error("Veuillez remplir tous les champs");
       return;
     }
 
-    // Simulation d'envoi
-    toast({
-      title: "Message envoyé !",
-      description: "Merci pour votre message. Je vous répondrai bientôt.",
-    });
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      toast.error("Veuillez entrer une adresse email valide");
+      return;
+    }
 
-    // Réinitialiser le formulaire
+    // Success (in real app, this would send to backend)
+    toast.success("Message envoyé avec succès ! Je vous répondrai bientôt.");
     setFormData({ name: "", email: "", message: "" });
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
   return (
-    <section id="contact" className="py-20 px-4">
-      <div className="container mx-auto max-w-2xl">
-        <h2 className="text-4xl md:text-5xl font-display font-bold text-center mb-4 text-primary animate-fade-in">
-          Me contacter
-        </h2>
-        <p className="text-center text-muted-foreground mb-12 text-lg">
-          Une question ? Un projet ? N'hésitez pas à me contacter !
-        </p>
+    <section id="contact" className="py-20 bg-muted/30">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl md:text-5xl font-display font-bold text-primary mb-4">
+            Contactez-moi
+          </h2>
+          <p className="text-muted-foreground text-lg">
+            Une question ? Un projet ? N'hésitez pas à me contacter
+          </p>
+        </div>
 
-        <form onSubmit={handleSubmit} className="space-y-6 animate-slide-up">
-          <div>
-            <label htmlFor="name" className="block text-sm font-medium mb-2 text-foreground">
-              Nom
-            </label>
-            <Input
-              id="name"
-              name="name"
-              type="text"
-              value={formData.name}
-              onChange={handleChange}
-              placeholder="Votre nom"
-              className="bg-card border-border focus:border-accent"
-            />
-          </div>
+        <div className="max-w-2xl mx-auto">
+          <Card className="border-0 shadow-xl bg-card">
+            <CardContent className="p-8">
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div>
+                  <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
+                    Nom complet
+                  </label>
+                  <Input
+                    id="name"
+                    type="text"
+                    placeholder="Votre nom"
+                    value={formData.name}
+                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    className="bg-background border-border focus:border-primary"
+                  />
+                </div>
 
-          <div>
-            <label htmlFor="email" className="block text-sm font-medium mb-2 text-foreground">
-              Email
-            </label>
-            <Input
-              id="email"
-              name="email"
-              type="email"
-              value={formData.email}
-              onChange={handleChange}
-              placeholder="votre.email@example.com"
-              className="bg-card border-border focus:border-accent"
-            />
-          </div>
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
+                    Email
+                  </label>
+                  <Input
+                    id="email"
+                    type="email"
+                    placeholder="votre.email@exemple.com"
+                    value={formData.email}
+                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                    className="bg-background border-border focus:border-primary"
+                  />
+                </div>
 
-          <div>
-            <label htmlFor="message" className="block text-sm font-medium mb-2 text-foreground">
-              Message
-            </label>
-            <Textarea
-              id="message"
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              placeholder="Votre message..."
-              rows={6}
-              className="bg-card border-border focus:border-accent resize-none"
-            />
-          </div>
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
+                    Message
+                  </label>
+                  <Textarea
+                    id="message"
+                    placeholder="Votre message..."
+                    rows={6}
+                    value={formData.message}
+                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                    className="bg-background border-border focus:border-primary resize-none"
+                  />
+                </div>
 
-          <Button
-            type="submit"
-            className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-semibold py-6 text-lg group"
-          >
-            <Send className="mr-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            Envoyer
-          </Button>
-        </form>
+                <Button
+                  type="submit"
+                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+                  size="lg"
+                >
+                  Envoyer le message
+                  <Send className="ml-2" size={18} />
+                </Button>
+              </form>
+
+              <div className="mt-8 pt-8 border-t border-border text-center">
+                <p className="text-muted-foreground mb-2">Ou contactez-moi directement par email</p>
+                <a
+                  href="mailto:contact@exemple.com"
+                  className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
+                >
+                  <Mail size={20} />
+                  contact@exemple.com
+                </a>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
       </div>
     </section>
   );

@@ -7,10 +7,7 @@
     "description": "Création de la page d'accueil d'une agence de voyage avec HTML & CSS. Intégration responsive suivant les maquettes desktop, tablette et mobile.",
     "technologies": ["HTML5", "CSS3", "Responsive Design"],
     "github": "https://github.com",
-    "images": [
-      "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1541480551145-2370a440d585?w=800&h=600&fit=crop"
-    ],
+    "images": ["/assets/images/booki-plateforme-reservation-html-css-responsive.png"],
     "featured": true
   },
   {
@@ -21,14 +18,22 @@
     "description": "Application web de location immobilière développée avec React et React Router. Création de composants réutilisables, gestion du routing et animations CSS.",
     "technologies": ["React", "React Router", "Sass", "Responsive"],
     "github": "https://github.com",
-    "images": [
-      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=800&h=600&fit=crop"
-    ],
+    "images": ["/assets/images/Kasa, application de location en React avec interface mobile-first.png"],
     "featured": true
   },
   {
     "id": 3,
+    "title": "ArgentBank - Banque en ligne",
+    "date": "2023",
+    "category": ["React", "JS"],
+    "description": "Application bancaire avec authentification. Utilisation de Redux pour la gestion d'état et intégration d'API REST.",
+    "technologies": ["React", "Redux", "API REST", "Authentication"],
+    "github": "https://github.com",
+    "images": ["/assets/images/Tableau de bord ArgentBank, dashboard bancaire moderne avec React et Redux.png"],
+    "featured": true
+  },
+  {
+    "id": 4,
     "title": "Sophie Bluel - Architecte",
     "date": "2023",
     "category": ["JS", "HTML", "CSS"],
@@ -38,19 +43,6 @@
     "images": [
       "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=600&fit=crop"
-    ],
-    "featured": true
-  },
-  {
-    "id": 4,
-    "title": "Nina Carducci - Photographe",
-    "date": "2023",
-    "category": ["SEO", "JS"],
-    "description": "Optimisation SEO d'un site de photographe. Amélioration des performances, accessibilité et référencement naturel.",
-    "technologies": ["SEO", "Lighthouse", "Accessibilité", "Performance"],
-    "github": "https://github.com",
-    "images": [
-      "https://images.unsplash.com/photo-1554048612-b6a482bc67e5?w=800&h=600&fit=crop"
     ],
     "featured": false
   },
@@ -64,19 +56,6 @@
     "github": "https://github.com",
     "images": [
       "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&h=600&fit=crop"
-    ],
-    "featured": false
-  },
-  {
-    "id": 6,
-    "title": "ArgentBank - Banque en ligne",
-    "date": "2023",
-    "category": ["React", "JS"],
-    "description": "Application bancaire avec authentification. Utilisation de Redux pour la gestion d'état et intégration d'API REST.",
-    "technologies": ["React", "Redux", "API REST", "Authentication"],
-    "github": "https://github.com",
-    "images": [
-      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop"
     ],
     "featured": false
   }

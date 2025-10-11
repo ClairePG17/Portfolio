@@ -4,35 +4,35 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Github, href: "https://github.com", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: Mail, href: "mailto:contact@example.com", label: "Email" },
+    { icon: Github, href: "https://github.com/username", label: "GitHub" },
+    { icon: Linkedin, href: "https://linkedin.com/in/username", label: "LinkedIn" },
+    { icon: Mail, href: "mailto:contact@exemple.com", label: "Email" },
   ];
 
   return (
-    <footer className="bg-card py-8 px-4 border-t border-border">
-      <div className="container mx-auto max-w-6xl">
-        <div className="flex flex-col items-center gap-6">
-          {/* Réseaux sociaux */}
+    <footer className="bg-card py-12 border-t border-border">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col items-center space-y-6">
           <div className="flex gap-6">
-            {socialLinks.map((link) => (
+            {socialLinks.map((social) => (
               <a
-                key={link.label}
-                href={link.href}
+                key={social.label}
+                href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-background rounded-full hover:bg-accent hover:text-accent-foreground transition-all duration-300 group"
-                aria-label={link.label}
+                className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                aria-label={social.label}
               >
-                <link.icon className="h-6 w-6 group-hover:scale-110 transition-transform" />
+                <social.icon size={20} />
               </a>
             ))}
           </div>
 
-          {/* Copyright */}
-          <p className="text-muted-foreground text-center">
-            © {currentYear} Portfolio Développeuse Web. Tous droits réservés.
-          </p>
+          <div className="text-center">
+            <p className="text-muted-foreground">
+              © {currentYear} Portfolio. Tous droits réservés.
+            </p>
+          </div>
         </div>
       </div>
     </footer>
@@ -40,3 +40,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
