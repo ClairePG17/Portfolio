@@ -65,11 +65,12 @@
     "date": "2025",
     "category": ["SEO", "Accessibilité", "Optimisation"],
     "description": "Mise en conformité SEO et accessibilité pour le site d’une photographe freelance. Analyse avec Lighthouse et Chrome DevTools, amélioration du balisage sémantique, optimisation de la vitesse de chargement, ajout d’attributs et contrastes AA. Un cas concret de référencement et performances front-end pour une présence accrue sur Google.",
-    "technologies": ["SEO", "Lighthouse", "HTML5", "CSS3", "Accessibilité"],
+    "technologies": ["SEO", "Lighthouse", "HTML5", "CSS3", "Accessibilité", "Wave"],
     "github": "https://github.com/tonprofil/nina-seo-accessibility",
     "images": [
-      "/assets/images/nina-carducci-seo-report.png",
-      "/assets/images/nina-carducci-accessibility.png"
+      "/assets/images/nina/Nina_Desktop.png",
+      "/assets/images/nina/Nina_Lighthouse.png",
+      "/assets/images/nina/Nina_Wave.png"
     ],
     "featured": false
   },
@@ -82,8 +83,9 @@
     "technologies": ["JavaScript", "Debug", "Chrome DevTools", "Testing"],
     "github": "https://github.com/tonprofil/724events-debug",
     "images": [
-      "/assets/images/724events-debug.png",
-      "/assets/images/724events-chrome-devtools.png"
+      "/assets/images/724events/724_home.png",
+      "/assets/images/724events/724_filtre.png",
+      "assets/images/724events/724_contact-form.png"
     ],
     "featured": false
   },
