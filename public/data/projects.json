@@ -8,9 +8,9 @@
     "technologies": ["HTML5", "CSS3", "Responsive Design", "Figma"],
     "github": "https://github.com/tonprofil/booki-project",
     "images": [
-      "/assets/images/Booki-Desktop.png",
-      "/assets/images/Booki-Responsive_Tablette.png",
-      "/assets/images/Booki-responsive-phone.png"
+      "/assets/images/booki/Booki-Desktop.png",
+      "/assets/images/booki/Booki-Responsive_Tablette.png",
+      "/assets/images/booki/Booki-responsive-phone.png"
     ],
     "featured": true
   },
@@ -18,14 +18,15 @@
     "id": 2,
     "title": "OhMyFood - Foodtech mobile-first avec animations CSS avancées",
     "date": "2024",
-    "category": ["HTML", "CSS", "SASS", "Animations"],
+    "category": ["HTML", "CSS", "Sass", "Animations"],
     "description": "Réalisation d’un site vitrine pour une plateforme de restaurants en mobile-first. Utilisation de SASS pour un CSS modulaire et maintenable, création d’animations CSS modernes (transitions, keyframes). Versionnage sur Git/GitHub et respect strict de la maquette chef-projet. Un exemple de gestion complète du projet, de la conception à la livraison.",
     "technologies": ["HTML5", "CSS3", "SASS", "Git", "CSS Animations"],
     "github": "https://github.com/tonprofil/ohmyfood-project",
     "images": [
-      "/assets/images/ohmyfood-mobile-animation.png",
-      "/assets/images/ohmyfood-sass.png",
-      "/assets/images/ohmyfood-github-versioning.png"
+      "/assets/images/ohmyfood/Ohmyfood_animation.mp4",
+      "/assets/images/ohmyfood/Ohmyfood_Desktop.png",
+      "/assets/images/ohmyfood/Ohmyfood-Responsive_Tablet.png",
+      "/assets/images/ohmyfood/Ohmyfood_Responsive_phone.png"
     ],
     "featured": true
   },
@@ -37,10 +38,7 @@
     "description": "Développement d’un carousel d’images interactif pour le site Print It. Manipulation du DOM, gestion des événements utilisateurs et logique algorithmique en JavaScript pur. Un projet axé sur la programmation dynamique, la performance visuelle, et l’amélioration de l’expérience client.",
     "technologies": ["JavaScript ES6", "DOM", "Algorithmie", "CSS3"],
     "github": "https://github.com/tonprofil/printit-carrousel",
-    "images": [
-      "/assets/images/printit-carrousel-js.png",
-      "/assets/images/printit-dom.PNG"
-    ],
+    "images": ["/assets/images/printit-carrousel-js.png", "/assets/images/printit-dom.PNG"],
     "featured": false
   },
   {
@@ -51,10 +49,7 @@
     "description": "Finalisation d’un site internet pour une architecte d’intérieur : récupération et affichage dynamique des informations via une API externe, formulaires interactifs, validation et gestion d’événements côté client. Projet axé sur la modularité, la communication asynchrone et le design évolutif pour professionnels.",
     "technologies": ["JavaScript", "API", "Fetch", "HTML5", "CSS3", "DOM"],
     "github": "https://github.com/tonprofil/sophiebluel-dynamique",
-    "images": [
-      "/assets/images/sophie-bluel-api.png",
-      "/assets/images/sophie-bluel-formulaire.png"
-    ],
+    "images": ["/assets/images/sophie-bluel-api.png", "/assets/images/sophie-bluel-formulaire.png"],
     "featured": true
   },
   {

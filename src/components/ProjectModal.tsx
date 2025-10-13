@@ -44,21 +44,32 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
           <div className="relative rounded-lg overflow-hidden bg-muted group">
             {/* Container with fixed aspect ratio */}
             <div className="relative w-full aspect-video">
-              {project.images.map((image, index) => (
-                <div
-                  key={index}
-                  className={`absolute inset-0 transition-opacity duration-500 ${
-                    index === currentImage ? "opacity-100" : "opacity-0"
-                  }`}
-                >
-                  <img
-                    src={image}
-                    alt={`${project.title} - Image ${index + 1}`}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              ))}
-            </div>
+  {project.images.map((media, index) => (
+    <div
+      key={index}
+      className={`absolute inset-0 transition-opacity duration-500 ${
+        index === currentImage ? "opacity-100" : "opacity-0"
+      }`}
+    >
+      {media.endsWith(".mp4") ? (
+        <video
+          src={media}
+          className="w-full h-full object-cover"
+          controls
+          loop
+          muted
+        />
+      ) : (
+        <img
+          src={media}
+          alt={`${project.title} - Image ${index + 1}`}
+          className="w-full h-full object-cover"
+        />
+      )}
+    </div>
+  ))}
+</div>
+            
 
             {/* Navigation - visible seulement s'il y a plusieurs images */}
             {project.images.length > 1 && (
