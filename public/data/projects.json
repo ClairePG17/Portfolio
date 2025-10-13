@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Booki - Création d’une plateforme de réservation de vacances responsive",
-    "date": "2024",
+    "date": "2025",
     "category": ["HTML", "CSS", "Responsive"],
     "description": "Développement complet de la page d'accueil pour Booki, une agence de voyage. Intégration fidèle de la maquette Figma en HTML5 et CSS3, avec adaptation à toutes les résolutions (desktop, tablette, mobile) et optimisation UX/UI. Maîtrise du responsive design (Flexbox, Media Queries) pour garantir une navigation fluide et accessible. Un projet référence en intégration sémantique et performance front-end.",
     "technologies": ["HTML5", "CSS3", "Responsive Design", "Figma"],
@@ -17,45 +17,51 @@
   {
     "id": 2,
     "title": "OhMyFood - Foodtech mobile-first avec animations CSS avancées",
-    "date": "2024",
+    "date": "2025",
     "category": ["HTML", "CSS", "Sass", "Animations"],
     "description": "Réalisation d’un site vitrine pour une plateforme de restaurants en mobile-first. Utilisation de SASS pour un CSS modulaire et maintenable, création d’animations CSS modernes (transitions, keyframes). Versionnage sur Git/GitHub et respect strict de la maquette chef-projet. Un exemple de gestion complète du projet, de la conception à la livraison.",
     "technologies": ["HTML5", "CSS3", "SASS", "Git", "CSS Animations"],
     "github": "https://github.com/tonprofil/ohmyfood-project",
     "images": [
-      "/assets/images/ohmyfood/Ohmyfood_animation.mp4",
       "/assets/images/ohmyfood/Ohmyfood_Desktop.png",
       "/assets/images/ohmyfood/Ohmyfood-Responsive_Tablet.png",
-      "/assets/images/ohmyfood/Ohmyfood_Responsive_phone.png"
+      "/assets/images/ohmyfood/Ohmyfood_Responsive_phone.png",
+      "/assets/images/ohmyfood/Ohmyfood_animation.mp4"
     ],
     "featured": true
   },
   {
     "id": 3,
-    "title": "Print It - Carrousel d’imprimerie dynamique en JavaScript vanilla",
-    "date": "2024",
-    "category": ["JavaScript"],
+    "title": "Print It - Carrousel d’imprimerie dynamique en JavaScript",
+    "date": "2025",
+    "category": ["JavaScript", "Animations"],
     "description": "Développement d’un carousel d’images interactif pour le site Print It. Manipulation du DOM, gestion des événements utilisateurs et logique algorithmique en JavaScript pur. Un projet axé sur la programmation dynamique, la performance visuelle, et l’amélioration de l’expérience client.",
-    "technologies": ["JavaScript ES6", "DOM", "Algorithmie", "CSS3"],
+    "technologies": ["JavaScript", "DOM", "Algorithmie", "CSS3", "Animations"],
     "github": "https://github.com/tonprofil/printit-carrousel",
-    "images": ["/assets/images/printit-carrousel-js.png", "/assets/images/printit-dom.PNG"],
+    "images": [
+      "/assets/images/printIt/PrintIt_Desktop.png",
+      "assets/images/printIt/PrintIt_Carrousel_Animation.mp4"
+    ],
     "featured": false
   },
   {
     "id": 4,
     "title": "Sophie Bluel - Site web dynamique, communication API et formulaires JS",
-    "date": "2024",
+    "date": "2025",
     "category": ["JavaScript", "API", "Front-End"],
     "description": "Finalisation d’un site internet pour une architecte d’intérieur : récupération et affichage dynamique des informations via une API externe, formulaires interactifs, validation et gestion d’événements côté client. Projet axé sur la modularité, la communication asynchrone et le design évolutif pour professionnels.",
     "technologies": ["JavaScript", "API", "Fetch", "HTML5", "CSS3", "DOM"],
     "github": "https://github.com/tonprofil/sophiebluel-dynamique",
-    "images": ["/assets/images/sophie-bluel-api.png", "/assets/images/sophie-bluel-formulaire.png"],
+    "images": [
+      "/assets/images/sophie-bluel-api.png",
+      "/assets/images/sophie-bluel-formulaire.png"
+    ],
     "featured": true
   },
   {
     "id": 5,
     "title": "Nina Carducci - Optimisation SEO et accessibilité pour photographe",
-    "date": "2024",
+    "date": "2025",
     "category": ["SEO", "Accessibilité", "Optimisation"],
     "description": "Mise en conformité SEO et accessibilité pour le site d’une photographe freelance. Analyse avec Lighthouse et Chrome DevTools, amélioration du balisage sémantique, optimisation de la vitesse de chargement, ajout d’attributs et contrastes AA. Un cas concret de référencement et performances front-end pour une présence accrue sur Google.",
     "technologies": ["SEO", "Lighthouse", "HTML5", "CSS3", "Accessibilité"],
@@ -69,7 +75,7 @@
   {
     "id": 6,
     "title": "724Events - Debug, maintenance et recette d’une agence événementielle",
-    "date": "2024",
+    "date": "2025",
     "category": ["Debug", "Maintenance", "Chrome DevTools"],
     "description": "Prise en main et correction d’un site existant développé par un tiers. Analyse et résolution de bugs via Chrome DevTools, rédaction d’un cahier de recette, tests fonctionnels, mise en place de bonnes pratiques pour un site fiable, rapide et sécurisé. Un projet illustratif en troubleshooting et maintenance front-end.",
     "technologies": ["JavaScript", "Debug", "Chrome DevTools", "Testing"],
@@ -83,7 +89,7 @@
   {
     "id": 7,
     "title": "Menu Maker Qwenta - Gestion de projet création menus restaurants",
-    "date": "2024",
+    "date": "2025",
     "category": ["Gestion de projet", "Spécifications techniques"],
     "description": "Planification et découpage fonctionnel d’une application de création de menus pour restaurateurs. Rédaction complète des spécifications techniques, présentation de la solution, suivi du développement via outil Kanban. Projet orienté gestion Agile, veille technologique et interactions client.",
     "technologies": ["Gestion de projet", "Kanban", "Agile", "Spécifications"],
@@ -97,7 +103,7 @@
   {
     "id": 8,
     "title": "Kasa - Application React, location immobilière avec routes dynamiques",
-    "date": "2024",
+    "date": "2025",
     "category": ["React", "SPA", "Router"],
     "description": "Implémentation du front-end pour l’application Kasa : développement de composants React, Single Page Application, gestion des routes avec React Router, animations CSS et respect des standards UI. Un projet phare pour démontrer la maîtrise du Framework React et l’architecture modulaire.",
     "technologies": ["React", "React Router", "SASS", "CSS Animations", "SPA"],
@@ -112,7 +118,7 @@
   {
     "id": 9,
     "title": "ArgentBank - Application bancaire performante (React + Redux + API REST)",
-    "date": "2024",
+    "date": "2025",
     "category": ["React", "Redux", "API REST", "FinTech"],
     "description": "Développement complet de l’interface client pour ArgentBank. Connexion au back-end via API REST, gestion des données avec Redux pour des performances optimales, configuration des routes et sécurité du front. Un cas d’école de l’intégration bancaire moderne, axé sur l’excellence technique et la robustesse.",
     "technologies": ["React", "Redux", "API REST", "JavaScript"],
