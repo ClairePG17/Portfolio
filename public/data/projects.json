@@ -53,8 +53,9 @@
     "technologies": ["JavaScript", "API", "Fetch", "HTML5", "CSS3", "DOM"],
     "github": "https://github.com/tonprofil/sophiebluel-dynamique",
     "images": [
-      "/assets/images/sophie-bluel-api.png",
-      "/assets/images/sophie-bluel-formulaire.png"
+      "/assets/images/sophie/Sophie_Desktop_Home.png",
+      "/assets/images/sophie/Sophie_edition_modal.png",
+      "public/assets/images/sophie/Sophie_edition_ajout-projet.png"
     ],
     "featured": true
   },
