@@ -93,13 +93,12 @@
     "id": 7,
     "title": "Menu Maker Qwenta - Gestion de projet création menus restaurants",
     "date": "2025",
-    "category": ["Gestion de projet", "Spécifications techniques"],
+    "category": ["Gestion de projet agile", "Spécifications techniques"],
     "description": "Planification et découpage fonctionnel d’une application de création de menus pour restaurateurs. Rédaction complète des spécifications techniques, présentation de la solution, suivi du développement via outil Kanban. Projet orienté gestion Agile, veille technologique et interactions client.",
-    "technologies": ["Gestion de projet", "Kanban", "Agile", "Spécifications"],
+    "technologies": ["Gestion de projet", "Kanban", "Agile", "Spécifications", "Jira"],
     "github": "https://github.com/tonprofil/menumaker-qwenta",
     "images": [
-      "/assets/images/menumaker-specifications.png",
-      "/assets/images/menumaker-kanban.png"
+      "/assets/images/menuMaker/Menumaker_Dashboard.png"
     ],
     "featured": false
   },
@@ -112,9 +111,12 @@
     "technologies": ["React", "React Router", "SASS", "CSS Animations", "SPA"],
     "github": "https://github.com/tonprofil/kasa-react",
     "images": [
-      "/assets/images/kasa-react-front.png",
-      "/assets/images/kasa-react-router.png",
-      "/assets/images/kasa-animation.png"
+      "/assets/images/kasa/Kase_home.png",
+      "/assets/images/kasa/Kasa_details.png",
+      "/assets/images/kasa/Kase_about.png",
+      "/assets/images/kasa/Kasa_responsive_tablet.png",
+      "/assets/images/kasa/Kasa_responsive_phone.png",
+      "public/assets/images/kasa/Kasa_video.mp4"
     ],
     "featured": true
   },
@@ -127,8 +129,10 @@
     "technologies": ["React", "Redux", "API REST", "JavaScript"],
     "github": "https://github.com/tonprofil/argentbank-react-redux",
     "images": [
-      "/assets/images/argentbank-react-redux.png",
-      "/assets/images/argentbank-api-rest.png"
+      "/assets/images/argentBank/ArgentBank_Home.png",
+      "/assets/images/argentBank/ArgentBank_SignIn-form.png",
+      "public/assets/images/argentBank/ArgentBank_Dashboard.png",
+      "public/assets/images/argentBank/ArgentBank_Edit-surname.png"
     ],
     "featured": true
   },
@@ -136,14 +140,12 @@
     "id": 10,
     "title": "Portfolio Web - Déploiement et référencement optimisé",
     "date": "2025",
-    "category": ["Portfolio", "Déploiement", "SEO"],
+    "category": ["CSS", "SEO", "TailWindCSS", "React"],
     "description": "Création et déploiement d’un portfolio personnalisé sur GitHub Pages. Optimisation du code, amélioration du référencement SEO, et mise en place d’une expérience utilisateur responsive. Présentation détaillée de chaque projet, technologies utilisées, carrousels interactifs, et accès direct aux dépôts GitHub pour garantir la transparence et la confiance des recruteurs.",
-    "technologies": ["HTML5", "CSS3", "React", "GitHub Pages", "SEO"],
+    "technologies": ["HTML5", "TailWindCSS", "React", "GitHub Pages", "SEO"],
     "github": "https://github.com/tonprofil/portfolio",
     "images": [
-      "/assets/images/portfolio-deploy.png",
-      "/assets/images/portfolio-github.png",
-      "/assets/images/portfolio-carousel.png"
+      "/assets/images/Portfolio.png"
     ],
     "featured": true
   }
