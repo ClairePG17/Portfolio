@@ -23,9 +23,10 @@ const Projects = ({ projects }: ProjectsProps) => {
 
   const filters = ["Tous", "React", "HTML", "CSS", "Sass", "SEO", "JS"];
 
-  const filteredProjects = selectedFilter === "Tous"
-    ? projects
-    : projects.filter((p) => p.category.includes(selectedFilter));
+  const filteredProjects =
+    selectedFilter === "Tous"
+      ? projects
+      : projects.filter((p) => p.category.includes(selectedFilter));
 
   return (
     <section id="projects" className="py-20 px-4">
@@ -60,7 +61,8 @@ const Projects = ({ projects }: ProjectsProps) => {
               className="group cursor-pointer overflow-hidden bg-card hover:shadow-elegant transition-all duration-300 animate-fade-in"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="relative h-64 overflow-hidden">
+              {/* Container with fixed aspect ratio */}
+              <div className="relative w-full aspect-video overflow-hidden">
                 <img
                   src={project.images[0]}
                   alt={project.title}
@@ -86,13 +88,9 @@ const Projects = ({ projects }: ProjectsProps) => {
             </Card>
           ))}
         </div>
-
         {/* Modale */}
         {selectedProject && (
-          <ProjectModal
-            project={selectedProject}
-            onClose={() => setSelectedProject(null)}
-          />
+          <ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)} />
         )}
       </div>
     </section>

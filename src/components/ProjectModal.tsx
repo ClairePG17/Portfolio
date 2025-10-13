@@ -1,12 +1,7 @@
 import { useState } from "react";
 import { X, ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
 import { Button } from "./ui/button";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-} from "./ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "./ui/dialog";
 
 interface Project {
   id: number;
@@ -46,9 +41,9 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
 
         {/* Carrousel d'images */}
         {project.images.length > 0 && (
-          <div className="relative h-96 rounded-lg overflow-hidden bg-muted group">
-            {/* Image principale avec transition */}
-            <div className="relative w-full h-full">
+          <div className="relative rounded-lg overflow-hidden bg-muted group">
+            {/* Container with fixed aspect ratio */}
+            <div className="relative w-full aspect-video">
               {project.images.map((image, index) => (
                 <div
                   key={index}
@@ -64,7 +59,7 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                 </div>
               ))}
             </div>
-            
+
             {/* Navigation - visible seulement s'il y a plusieurs images */}
             {project.images.length > 1 && (
               <>

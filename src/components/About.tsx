@@ -13,7 +13,7 @@ const About = () => {
               <img
                 src="/assets/images/photo_Claire_Prin-Guenon.jpeg"
                 alt="Développeuse web"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
             </div>
           </div>
@@ -45,10 +45,10 @@ const About = () => {
               </div>
 
             <div className="flex flex-wrap gap-3 pt-4">
-              {["React", "Sass", "JavaScript", "Gestion de projet agile"].map((skill) => (
+              {["React & Redux", "Gestion de projet agile", "SEO", "TailwindCss"].map((skill) => (
                 <span
                   key={skill}
-                  className="px-4 py-2 bg-accent/20 text-accent rounded-full font-medium"
+                  className="px-4 py-2 bg-accent/20 text-primary rounded-full font-medium"
                 >
                   {skill}
                 </span>

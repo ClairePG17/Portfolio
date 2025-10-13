@@ -4,12 +4,18 @@ const Skills = () => {
   const technicalSkills = [
     { name: "React", icon: Code2, color: "text-accent" },
     { name: "JavaScript", icon: Code2, color: "text-primary" },
-    { name: "HTML/CSS", icon: Palette, color: "text-accent" },
+    { name: "HTML5", icon: Palette, color: "text-accent" },
+    { name: "CSS3", icon: Palette, color: "text-primary" },
     { name: "Sass", icon: Palette, color: "text-primary" },
+    { name: "TailwindCSS", icon: Palette, color: "text-primary" },
+    { name: "Redux", icon: Code2, color: "text-primary" },
+    { name: "API REST", icon: Database, color: "text-primary" },
     { name: "Responsive Design", icon: Globe, color: "text-accent" },
     { name: "SEO", icon: Globe, color: "text-primary" },
     { name: "Git/GitHub", icon: Database, color: "text-accent" },
-    { name: "API REST", icon: Database, color: "text-primary" },
+    { name: "Figna", icon: Palette, color: "text-accent" },
+    { name: "Jira", icon: Palette, color: "text-accent" },
+
   ];
 
   const softSkills = [
@@ -17,6 +23,8 @@ const Skills = () => {
     { name: "Gestion de projet", icon: Users },
     { name: "Autonomie", icon: Zap },
     { name: "Apprentissage rapide", icon: BookOpen },
+    { name: "Rigueur", icon: BookOpen },
+    { name: "Adaptabilité", icon: BookOpen },
   ];
 
   return (
