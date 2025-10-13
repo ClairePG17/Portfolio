@@ -3,31 +3,42 @@ import { GraduationCap, Briefcase } from "lucide-react";
 const Parcours = () => {
   const education = [
     {
-      year: "2024",
-      title: "Formation Développeur Web",
-      institution: "OpenClassrooms",
-      description: "Spécialisation en développement front-end avec React, JavaScript, et méthodologies agiles.",
+      year: "2025",
+      title: "Intégrateur Web (RNCP 38145)",
+      institution: "OpenClassrooms, Toulouse",
+      description:
+        "Conception d'applications web responsives avec React et Redux. Gestion des appels API, dynamisation des pages en HTML, CSS et JavaScript, optimisation des performances et du référencement SEO. Acquisition de compétences en gestion de projet web et rédaction des spécifications techniques.",
+    },
+    {
+      year: "2021-2023",
+      title: "Master Innovative and Sustainable Energy Engineering",
+      institution: "KTH, Stockholm",
+      description:
+        "Expertise en énergies conventionnelles et renouvelables, modélisation, gestion de projet, maîtrise des SIG (QGIS, ArcGIS) et des bases de données SQL.",
+    },
+  ];
+  
+  const experience = [
+    {
+      year: "2024-2025",
+      title: "Chargée d'études Éolien",
+      company: "Volkswind, Montpellier",
+      description:
+        "Analyse et traitement de données géographiques (QGIS, SQL), rédaction de documents techniques, collaboration avec partenaires et collectivités.",
     },
     {
       year: "2023",
-      title: "Formation Intégrateur Web",
-      institution: "OpenClassrooms",
-      description: "Maîtrise de HTML5, CSS3, Sass, et des principes de responsive design.",
-    },
-  ];
-
-  const experience = [
-    {
-      year: "2024",
-      title: "Projets Portfolio",
-      company: "Freelance",
-      description: "Développement de plusieurs applications web avec React, gestion de projets en méthode agile.",
+      title: "Chargée de développement territorial éolien (Stage)",
+      company: "Valeco, Montpellier",
+      description:
+        "Utilisation de SIG pour l'identification des zones favorables, analyse de données, présentation de résultats et gestion de projet.",
     },
     {
-      year: "2023-2024",
-      title: "Développeuse Web Junior",
-      company: "Projets d'étude",
-      description: "Création de sites web responsive, optimisation SEO, et débogage d'applications React.",
+      year: "2022",
+      title: "Part time HSE student",
+      company: "Nordex, Stockholm",
+      description:
+        "Gestion de données, reporting Excel, organisation de réunions, développement de compétences en gestion de projet et adaptabilité.",
     },
   ];
 

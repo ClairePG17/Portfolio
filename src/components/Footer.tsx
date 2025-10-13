@@ -6,7 +6,7 @@ const Footer = () => {
   const socialLinks = [
     { icon: Github, href: "https://github.com/ClairePG17", label: "GitHub" },
     { icon: Linkedin, href: "https://www.linkedin.com/in/claire-prin-guenon-a885461b5/", label: "LinkedIn" },
-    { icon: Mail, href: "pringuenon.claire@gmail.com", label: "Email" },
+    { icon: Mail, href: "mailto:pringuenon.claire@gmail.com", label: "Email" },
   ];
 
   return (
