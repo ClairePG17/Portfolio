@@ -39,7 +39,7 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
           </DialogTitle>
         </DialogHeader>
 
-        {/* Carrousel d'images */}
+        {/* Carrousel d'images/vidéos */}
         {project.images.length > 0 && (
           <div className="flex justify-center">
             <div className="relative rounded-lg overflow-hidden bg-muted group w-full md:w-7/8">
@@ -51,17 +51,19 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                       index === currentImage ? "opacity-100" : "opacity-0"
                     }`}
                   >
-                    {media.endsWith(".mp4") ? (
+                    {media.endsWith(".mp4") || media.endsWith(".webm") ? (
                       <video
                         src={media}
                         className="w-full h-full object-cover"
                         controls
                         loop
                         muted
+                        preload="none" 
                       />
                     ) : (
                       <img
                         src={media}
+                        loading="lazy"
                         alt={`${project.title} - Image ${index + 1}`}
                         className="w-full h-full object-cover"
                       />
@@ -69,6 +71,7 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                   </div>
                 ))}
               </div>
+
               {project.images.length > 1 && (
                 <>
                   <Button

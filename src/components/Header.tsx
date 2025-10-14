@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Menu, X } from "lucide-react";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,11 +37,12 @@ const Header = () => {
         isScrolled ? "bg-card/95 backdrop-blur-sm shadow-card" : ""
       }`}
     >
-      <nav className="container mx-auto px-4 py-4">
+      <nav className="container mx-auto px-4 py-4" aria-label="Navigation principale">
         <div className="flex items-center justify-between">
           <button
             onClick={() => scrollToSection("home")}
             className="text-2xl font-display font-bold text-primary hover:text-accent transition-colors"
+            aria-label="Accueil"
           >
             Portfolio
           </button>
@@ -55,6 +56,7 @@ const Header = () => {
                   <button
                     onClick={() => scrollToSection(item.id)}
                     className="text-foreground hover:text-accent transition-colors font-medium"
+                    aria-label={item.label}
                   >
                     {item.label}
                   </button>
@@ -92,6 +94,7 @@ const Header = () => {
                 <button
                   onClick={() => scrollToSection(item.id)}
                   className="block w-full text-left py-2 text-foreground hover:text-accent transition-colors font-medium"
+                  aria-label={item.label}
                 >
                   {item.label}
                 </button>

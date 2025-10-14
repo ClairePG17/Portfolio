@@ -1,25 +1,39 @@
-import { FaReact, FaJs, FaHtml5, FaCss3Alt, FaSass, FaGitAlt, FaGithub, FaJira, FaFigma } from "react-icons/fa";
-import { SiRedux, SiTailwindcss } from "react-icons/si";
-import { VscJson } from "react-icons/vsc";
-import { BsPhone } from "react-icons/bs";
-import { FaSearch } from "react-icons/fa";
-import { MessageSquare, CalendarCheck, UserCheck, Zap, Users, Lightbulb, FolderCheck, Search} from "lucide-react";
+import {
+  Code2,
+  Braces,
+  Palette,
+  Feather,
+  Cloud,
+  GitMerge,
+  Github,
+  Figma,
+  CalendarCheck,
+  MessageSquare,
+  UserCheck,
+  Zap,
+  Users,
+  Lightbulb,
+  FolderCheck,
+  Search,
+  Smartphone
+} from "lucide-react";
+
 
 const technicalSkills = [
-  { name: "React", icon: FaReact },
-  { name: "JavaScript", icon: FaJs },
-  { name: "HTML5", icon: FaHtml5 },
-  { name: "CSS3", icon: FaCss3Alt },
-  { name: "Sass", icon: FaSass },
-  { name: "TailwindCSS", icon: SiTailwindcss },
-  { name: "Redux", icon: SiRedux },
-  { name: "API REST", icon: VscJson },
-  { name: "Responsive Design", icon: BsPhone },
-  { name: "SEO", icon: FaSearch },
-  { name: "Git", icon: FaGitAlt },
-  { name: "GitHub", icon: FaGithub },
-  { name: "Figma", icon: FaFigma },
-  { name: "Jira", icon: FaJira },
+  { name: "React", icon: Code2 },             // remplace FaReact
+  { name: "JavaScript", icon: Braces },       // remplace FaJs
+  { name: "HTML5", icon: Code2 },              // remplace FaHtml5
+  { name: "CSS3", icon: Palette },            // remplace FaCss3Alt
+  { name: "Sass", icon: Feather },            // remplace FaSass
+  { name: "TailwindCSS", icon: Palette },     // équivalent moderne
+  { name: "Redux", icon: Cloud },             // Redux = state/cloud
+  { name: "API REST", icon: Cloud },          // API = cloud/lien/network
+  { name: "Responsive Design", icon: Smartphone },
+  { name: "SEO", icon: Search },
+  { name: "Git", icon: GitMerge },
+  { name: "GitHub", icon: Github },
+  { name: "Figma", icon: Figma },
+  { name: "Jira", icon: CalendarCheck }
 ];
 
 const softSkills = [
@@ -30,7 +44,7 @@ const softSkills = [
   { name: "Travail en équipe", icon: Users },
   { name: "Résolution de problèmes", icon: Lightbulb },
   { name: "Organisation et Rigueur", icon: FolderCheck },
-  { name: "Curiosité et Esprit analytique", icon: Search },,
+  { name: "Curiosité et Esprit analytique", icon: Search }
 ];
 
 const Skills = () => (
@@ -57,11 +71,8 @@ const Skills = () => (
             ))}
           </div>
         </div>
-
         <div className="animate-slide-up" style={{ animationDelay: "200ms" }}>
-          <h3 className="text-2xl font-display font-semibold mb-8 text-primary">
-            Soft skills
-          </h3>
+          <h3 className="text-2xl font-display font-semibold mb-8 text-primary">Soft skills</h3>
           <div className="space-y-4">
             {softSkills.map((skill, index) => (
               <div
@@ -85,9 +96,9 @@ const Skills = () => (
       </div>
       <div className="mt-12 text-center p-8 bg-background rounded-lg shadow-card animate-fade-in">
         <p className="text-lg text-foreground">
-        Passionnée par l’innovation numérique, je me tiens continuellement informée des dernières technologies 
-        et des meilleures pratiques en développement web afin de garantir la qualité, 
-        la performance et l’accessibilité des projets réalisés.
+          Passionnée par l’innovation numérique, je me tiens continuellement informée des dernières technologies 
+          et des meilleures pratiques en développement web afin de garantir la qualité, 
+          la performance et l’accessibilité des projets réalisés.
         </p>
       </div>
     </div>

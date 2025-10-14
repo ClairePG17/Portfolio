@@ -8,7 +8,7 @@
     "technologies": ["HTML5", "CSS3", "Responsive Design", "Figma"],
     "github": "https://github.com/ClairePG17/Booki",
     "images": [
-      "/assets/images/booki/Booki-Desktop.png",
+      "/assets/images/booki/booki-plateforme-reservation-html-css-responsive.png",
       "/assets/images/booki/Booki-Responsive_Tablette.png",
       "/assets/images/booki/Booki-responsive-phone.png"
     ],
@@ -26,7 +26,7 @@
       "/assets/images/ohmyfood/Ohmyfood_Desktop.png",
       "/assets/images/ohmyfood/Ohmyfood-Responsive_Tablet.png",
       "/assets/images/ohmyfood/Ohmyfood_Responsive_phone.png",
-      "/assets/images/ohmyfood/Ohmyfood_animation.mp4"
+      "/assets/images/ohmyfood/Ohmyfood_animation.webm"
     ],
     "featured": true
   },
@@ -40,7 +40,7 @@
     "github": "https://github.com/ClairePG17/Print-It",
     "images": [
       "/assets/images/printIt/PrintIt_Desktop.png",
-      "assets/images/printIt/PrintIt_Carrousel_Animation.mp4"
+      "assets/images/printIt/printit-animations.webm"
     ],
     "featured": false
   },
@@ -112,10 +112,10 @@
     "images": [
       "/assets/images/kasa/Kase_home.png",
       "/assets/images/kasa/Kasa_details.png",
-      "/assets/images/kasa/Kase_about.png",
+      "/assets/images/kasa/Kasa_about.png",
       "/assets/images/kasa/Kasa_responsive_tablet.png",
       "/assets/images/kasa/Kasa_responsive_phone.png",
-      "public/assets/images/kasa/Kasa_video.mp4"
+      "public/assets/images/kasa/Kasa_video.webm"
     ],
     "featured": true
   },
@@ -144,7 +144,7 @@
     "technologies": ["HTML5", "TailWindCSS", "React", "GitHub Pages", "SEO", "TypeScript"],
     "github": "https://github.com/ClairePG17/Portfolio",
     "images": [
-      "/assets/images/Portfolio.png"
+      "/assets/images/Portfolio.webp"
     ],
     "featured": true
   }

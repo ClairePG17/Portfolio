@@ -21,7 +21,17 @@ const Projects = ({ projects }: ProjectsProps) => {
   const [selectedFilter, setSelectedFilter] = useState<string>("Tous");
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
-  const filters = ["Tous", "React & Redux", "HTML", "CSS & Sass", "Tailwind CSS", "JS", "Responsive", "Animations", "SEO"];
+  const filters = [
+    "Tous",
+    "React & Redux",
+    "HTML",
+    "CSS & Sass",
+    "Tailwind CSS",
+    "JS",
+    "Responsive",
+    "Animations",
+    "SEO",
+  ];
 
   const filteredProjects =
     selectedFilter === "Tous"
@@ -64,6 +74,7 @@ const Projects = ({ projects }: ProjectsProps) => {
               {/* Container with fixed aspect ratio */}
               <div className="relative w-full aspect-video overflow-hidden">
                 <img
+                  loading="lazy"
                   src={project.images[0]}
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
