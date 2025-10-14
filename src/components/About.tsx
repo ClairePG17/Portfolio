@@ -11,9 +11,9 @@ const About = () => {
           <div className="animate-slide-up">
             <div className="relative w-full max-w-md mx-auto aspect-square rounded-lg overflow-hidden shadow-elegant">
               <img
-                src="/assets/images/photo_Claire_Prin-Guenon.jpeg"
+                src="/assets/images/photo_Claire_Prin-Guenon.png"
                 alt="Développeuse web"
-                className="w-full h-full object-contain"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>

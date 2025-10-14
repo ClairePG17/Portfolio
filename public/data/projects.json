@@ -8,9 +8,9 @@
     "technologies": ["HTML5", "CSS3", "Responsive Design", "Figma"],
     "github": "https://github.com/ClairePG17/Booki",
     "images": [
+      "/assets/images/booki/Booki-responsive-phone.png",
       "/assets/images/booki/booki-plateforme-reservation-html-css-responsive.png",
-      "/assets/images/booki/Booki-Responsive_Tablette.png",
-      "/assets/images/booki/Booki-responsive-phone.png"
+      "/assets/images/booki/Booki-Responsive_Tablette.png"
     ],
     "featured": true
   },
@@ -23,8 +23,8 @@
     "technologies": ["HTML5", "CSS3", "SASS", "Git", "CSS Animations"],
     "github": "https://github.com/ClairePG17/Ohmyfood",
     "images": [
-      "/assets/images/ohmyfood/Ohmyfood_Desktop.png",
       "/assets/images/ohmyfood/Ohmyfood-Responsive_Tablet.png",
+      "/assets/images/ohmyfood/Ohmyfood_Desktop.png",
       "/assets/images/ohmyfood/Ohmyfood_Responsive_phone.png",
       "/assets/images/ohmyfood/Ohmyfood_animation.webm"
     ],
@@ -53,9 +53,9 @@
     "technologies": ["JavaScript", "API", "Fetch", "HTML5", "CSS3", "DOM", "API"],
     "github": "https://github.com/ClairePG17/Sophie-Bluel",
     "images": [
-      "/assets/images/sophie/Sophie_Desktop_Home.png",
       "/assets/images/sophie/Sophie_edition_modal.png",
-      "public/assets/images/sophie/Sophie_edition_ajout-projet.png"
+      "public/assets/images/sophie/Sophie_edition_ajout-projet.png",
+      "/assets/images/sophie/Sophie_Desktop_Home.png"
     ],
     "featured": true
   },
@@ -91,18 +91,6 @@
   },
   {
     "id": 7,
-    "title": "Menu Maker Qwenta - Gestion de projet création menus restaurants",
-    "date": "2025",
-    "category": ["React & Redux"],
-    "description": "Planification et découpage fonctionnel d’une application de création de menus pour restaurateurs. Rédaction complète des spécifications techniques, présentation de la solution, suivi du développement via outil Kanban. Projet orienté gestion Agile, veille technologique et interactions client.",
-    "technologies": ["Gestion de projet", "Kanban", "Agile", "Spécifications", "Jira", "React"],
-    "images": [
-      "/assets/images/menuMaker/Menumaker_Dashboard.png"
-    ],
-    "featured": false
-  },
-  {
-    "id": 8,
     "title": "Kasa - Application React, location immobilière avec routes dynamiques",
     "date": "2025",
     "category": ["React & Redux", "CSS & Sass", "Animations", "Responsive"],
@@ -110,17 +98,17 @@
     "technologies": ["React", "React Router", "SASS", "CSS Animations", "SPA"],
     "github": "https://github.com/ClairePG17/Kasa",
     "images": [
+      "/assets/images/kasa/Kasa_responsive_tablet.png",
       "/assets/images/kasa/Kase_home.png",
       "/assets/images/kasa/Kasa_details.png",
       "/assets/images/kasa/Kasa_about.png",
-      "/assets/images/kasa/Kasa_responsive_tablet.png",
       "/assets/images/kasa/Kasa_responsive_phone.png",
       "public/assets/images/kasa/Kasa_video.webm"
     ],
     "featured": true
   },
   {
-    "id": 9,
+    "id": 8,
     "title": "ArgentBank - Application bancaire performante (React + Redux + API REST)",
     "date": "2025",
     "category": ["React & Redux", "JS"],
@@ -136,6 +124,18 @@
     "featured": true
   },
   {
+    "id": 9,
+    "title": "Menu Maker Qwenta - Gestion de projet création menus restaurants",
+    "date": "2025",
+    "category": ["React & Redux"],
+    "description": "Planification et découpage fonctionnel d’une application de création de menus pour restaurateurs. Rédaction complète des spécifications techniques, présentation de la solution, suivi du développement via outil Kanban. Projet orienté gestion Agile, veille technologique et interactions client.",
+    "technologies": ["Gestion de projet", "Kanban", "Agile", "Spécifications", "Jira", "React"],
+    "images": [
+      "/assets/images/menuMaker/Menumaker_Dashboard.png"
+    ],
+    "featured": false
+  },
+  {
     "id": 10,
     "title": "Portfolio Web - Déploiement et référencement optimisé",
     "date": "2025",
@@ -144,7 +144,7 @@
     "technologies": ["HTML5", "TailWindCSS", "React", "GitHub Pages", "SEO", "TypeScript"],
     "github": "https://github.com/ClairePG17/Portfolio",
     "images": [
-      "/assets/images/Portfolio.webp"
+      "/assets/images/portfolio.png"
     ],
     "featured": true
   }

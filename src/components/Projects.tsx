@@ -63,21 +63,23 @@ const Projects = ({ projects }: ProjectsProps) => {
         </div>
 
         {/* Grille de projets */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredProjects.map((project, index) => (
-            <Card
-              key={project.id}
-              onClick={() => setSelectedProject(project)}
-              className="group cursor-pointer overflow-hidden shadow-xl bg-card hover:shadow-elegant transition-all duration-300 animate-fade-in"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
+        <div
+          key={selectedFilter}  // <-- clé dynamique pour reset animation au changement
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
+          {filteredProjects.map((project) => (
+  <Card
+    key={project.id}
+    onClick={() => setSelectedProject(project)}
+    className="group cursor-pointer overflow-hidden shadow-xl bg-card hover:shadow-elegant transition-all duration-300 animate-scale-fade-in"
+  >
               {/* Container with fixed aspect ratio */}
               <div className="relative w-full aspect-video overflow-hidden">
                 <img
                   loading="lazy"
                   src={project.images[0]}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-center p-6">
                   <h3 className="text-2xl font-display font-bold text-primary-foreground mb-2">
@@ -99,6 +101,7 @@ const Projects = ({ projects }: ProjectsProps) => {
             </Card>
           ))}
         </div>
+
         {/* Modale */}
         {selectedProject && (
           <ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)} />

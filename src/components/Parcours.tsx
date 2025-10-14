@@ -28,7 +28,7 @@ const Parcours = () => {
     },
     {
       year: "2023",
-      title: "Chargée de développement territorial éolien (Stage)",
+      title: "Chargée de développement territorial éolien",
       company: "Valeco, Montpellier",
       description:
         "Utilisation de SIG pour l'identification des zones favorables, analyse de données, présentation de résultats et gestion de projet.",
