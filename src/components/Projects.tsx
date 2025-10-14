@@ -21,7 +21,7 @@ const Projects = ({ projects }: ProjectsProps) => {
   const [selectedFilter, setSelectedFilter] = useState<string>("Tous");
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
-  const filters = ["Tous", "React", "HTML", "CSS", "Sass", "SEO", "JS"];
+  const filters = ["Tous", "React & Redux", "HTML", "CSS & Sass", "Tailwind CSS", "JS", "Responsive", "Animations", "SEO"];
 
   const filteredProjects =
     selectedFilter === "Tous"

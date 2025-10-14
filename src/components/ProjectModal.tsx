@@ -44,32 +44,25 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
           <div className="relative rounded-lg overflow-hidden bg-muted group">
             {/* Container with fixed aspect ratio */}
             <div className="relative w-full aspect-video">
-  {project.images.map((media, index) => (
-    <div
-      key={index}
-      className={`absolute inset-0 transition-opacity duration-500 ${
-        index === currentImage ? "opacity-100" : "opacity-0"
-      }`}
-    >
-      {media.endsWith(".mp4") ? (
-        <video
-          src={media}
-          className="w-full h-full object-cover"
-          controls
-          loop
-          muted
-        />
-      ) : (
-        <img
-          src={media}
-          alt={`${project.title} - Image ${index + 1}`}
-          className="w-full h-full object-cover"
-        />
-      )}
-    </div>
-  ))}
-</div>
-            
+              {project.images.map((media, index) => (
+                <div
+                  key={index}
+                  className={`absolute inset-0 transition-opacity duration-500 ${
+                    index === currentImage ? "opacity-100" : "opacity-0"
+                  }`}
+                >
+                  {media.endsWith(".mp4") ? (
+                    <video src={media} className="w-full h-full object-cover" controls loop muted />
+                  ) : (
+                    <img
+                      src={media}
+                      alt={`${project.title} - Image ${index + 1}`}
+                      className="w-full h-full object-cover"
+                    />
+                  )}
+                </div>
+              ))}
+            </div>
 
             {/* Navigation - visible seulement s'il y a plusieurs images */}
             {project.images.length > 1 && (
@@ -132,7 +125,7 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
               {project.technologies.map((tech) => (
                 <span
                   key={tech}
-                  className="px-4 py-2 bg-accent/20 text-accent rounded-full font-medium"
+                  className="px-4 py-2 bg-accent/20 text-secondary-foreground rounded-full font-medium"
                 >
                   {tech}
                 </span>
@@ -140,17 +133,19 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
             </div>
           </div>
 
-          <div>
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-accent hover:text-accent/80 transition-colors font-medium"
-            >
-              <ExternalLink className="h-5 w-5" />
-              Voir sur GitHub
-            </a>
-          </div>
+          {project.github && (
+            <div>
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-secondary-foreground hover:text-accent/80 transition-colors font-medium"
+              >
+                <ExternalLink className="h-5 w-5" />
+                Voir sur GitHub
+              </a>
+            </div>
+          )}
         </div>
       </DialogContent>
     </Dialog>
