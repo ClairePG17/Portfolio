@@ -6,7 +6,7 @@
     "category": ["HTML", "CSS & Sass", "Responsive"],
     "description": "Développement complet de la page d'accueil pour Booki, une agence de voyage. Intégration fidèle de la maquette Figma en HTML5 et CSS3, avec adaptation à toutes les résolutions (desktop, tablette, mobile) et optimisation UX/UI. Maîtrise du responsive design (Flexbox, Media Queries) pour garantir une navigation fluide et accessible. Un projet référence en intégration sémantique et performance front-end.",
     "technologies": ["HTML5", "CSS3", "Responsive Design", "Figma"],
-    "github": "https://github.com/ClairePG17/Projet-3-HTML-CSS",
+    "github": "https://github.com/ClairePG17/Booki",
     "images": [
       "/assets/images/booki/Booki-Desktop.png",
       "/assets/images/booki/Booki-Responsive_Tablette.png",
@@ -21,7 +21,7 @@
     "category": ["HTML", "CSS & Sass", "Animations", "Responsive"],
     "description": "Réalisation d’un site vitrine pour une plateforme de restaurants en mobile-first. Utilisation de SASS pour un CSS modulaire et maintenable, création d’animations CSS modernes (transitions, keyframes). Versionnage sur Git/GitHub et respect strict de la maquette chef-projet. Un exemple de gestion complète du projet, de la conception à la livraison.",
     "technologies": ["HTML5", "CSS3", "SASS", "Git", "CSS Animations"],
-    "github": "https://github.com/ClairePG17/Projet-4-CSS-animations",
+    "github": "https://github.com/ClairePG17/Ohmyfood",
     "images": [
       "/assets/images/ohmyfood/Ohmyfood_Desktop.png",
       "/assets/images/ohmyfood/Ohmyfood-Responsive_Tablet.png",
@@ -37,7 +37,7 @@
     "category": ["JS", "Animations"],
     "description": "Développement d’un carousel d’images interactif pour le site Print It. Manipulation du DOM, gestion des événements utilisateurs et logique algorithmique en JavaScript pur. Un projet axé sur la programmation dynamique, la performance visuelle, et l’amélioration de l’expérience client.",
     "technologies": ["JavaScript", "DOM", "Algorithmie", "CSS3", "Animations"],
-    "github": "https://github.com/ClairePG17/Projet-5",
+    "github": "https://github.com/ClairePG17/Print-It",
     "images": [
       "/assets/images/printIt/PrintIt_Desktop.png",
       "assets/images/printIt/PrintIt_Carrousel_Animation.mp4"
@@ -51,7 +51,7 @@
     "category": ["JS", "HTML", "CSS & Sass"],
     "description": "Finalisation d’un site internet pour une architecte d’intérieur : récupération et affichage dynamique des informations via une API externe, formulaires interactifs, validation et gestion d’événements côté client. Projet axé sur la modularité, la communication asynchrone et le design évolutif pour professionnels.",
     "technologies": ["JavaScript", "API", "Fetch", "HTML5", "CSS3", "DOM", "API"],
-    "github": "https://github.com/ClairePG17/Projet-6-JS",
+    "github": "https://github.com/ClairePG17/Sophie-Bluel",
     "images": [
       "/assets/images/sophie/Sophie_Desktop_Home.png",
       "/assets/images/sophie/Sophie_edition_modal.png",
@@ -66,7 +66,7 @@
     "category": ["SEO", "HTML", "CSS & Sass"],
     "description": "Mise en conformité SEO et accessibilité pour le site d’une photographe freelance. Analyse avec Lighthouse et Chrome DevTools, amélioration du balisage sémantique, optimisation de la vitesse de chargement, ajout d’attributs et contrastes AA. Un cas concret de référencement et performances front-end pour une présence accrue sur Google.",
     "technologies": ["SEO", "Lighthouse", "HTML5", "CSS3", "Accessibilité", "Wave"],
-    "github": "https://github.com/ClairePG17/Projet-8-SEO",
+    "github": "https://github.com/ClairePG17/Nina-Carducci-SEO",
     "images": [
       "/assets/images/nina/Nina_Desktop.png",
       "/assets/images/nina/Nina_Lighthouse.png",
@@ -81,7 +81,7 @@
     "category": ["JS"],
     "description": "Prise en main et correction d’un site existant développé par un tiers. Analyse et résolution de bugs via Chrome DevTools, rédaction d’un cahier de recette, tests fonctionnels, mise en place de bonnes pratiques pour un site fiable, rapide et sécurisé. Un projet illustratif en troubleshooting et maintenance front-end.",
     "technologies": ["JavaScript", "Debug", "Chrome DevTools", "Testing", "Maintenance"],
-    "github": "https://github.com/ClairePG17/Projet_9",
+    "github": "https://github.com/ClairePG17/724-Events",
     "images": [
       "/assets/images/724events/724_home.png",
       "/assets/images/724events/724_filtre.png",
@@ -108,7 +108,7 @@
     "category": ["React & Redux", "CSS & Sass", "Animations", "Responsive"],
     "description": "Implémentation du front-end pour l’application Kasa : développement de composants React, Single Page Application, gestion des routes avec React Router, animations CSS et respect des standards UI. Un projet phare pour démontrer la maîtrise du Framework React et l’architecture modulaire.",
     "technologies": ["React", "React Router", "SASS", "CSS Animations", "SPA"],
-    "github": "https://github.com/ClairePG17/Projet7",
+    "github": "https://github.com/ClairePG17/Kasa",
     "images": [
       "/assets/images/kasa/Kase_home.png",
       "/assets/images/kasa/Kasa_details.png",
@@ -126,7 +126,7 @@
     "category": ["React & Redux", "JS"],
     "description": "Développement complet de l’interface client pour ArgentBank. Connexion au back-end via API REST, gestion des données avec Redux pour des performances optimales, configuration des routes et sécurité du front. Un cas d’école de l’intégration bancaire moderne, axé sur l’excellence technique et la robustesse.",
     "technologies": ["React", "Redux", "API REST", "JavaScript"],
-    "github": "https://github.com/ClairePG17/Project-10-Bank-API",
+    "github": "https://github.com/ClairePG17/ArgentBank",
     "images": [
       "/assets/images/argentBank/ArgentBank_Home.png",
       "/assets/images/argentBank/ArgentBank_SignIn-form.png",

@@ -58,7 +58,7 @@ const Projects = ({ projects }: ProjectsProps) => {
             <Card
               key={project.id}
               onClick={() => setSelectedProject(project)}
-              className="group cursor-pointer overflow-hidden bg-card hover:shadow-elegant transition-all duration-300 animate-fade-in"
+              className="group cursor-pointer overflow-hidden shadow-xl bg-card hover:shadow-elegant transition-all duration-300 animate-fade-in"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               {/* Container with fixed aspect ratio */}
