@@ -29,7 +29,7 @@ const Footer = () => {
           </div>
 
           <div className="text-center">
-            <p className="text-muted-foreground">
+            <p className="text-accent-foreground">
               © {currentYear} Portfolio. Tous droits réservés.
             </p>
           </div>

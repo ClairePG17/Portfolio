@@ -16,7 +16,7 @@ const Hero = () => {
     >
       <div className="container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto space-y-8 animate-fade-in-up">
-          <p className="text-muted-foreground tracking-wider uppercase text-sm">Bienvenue sur mon portfolio,</p>
+          <p className="text-secondary-foreground tracking-wider uppercase text-sm">Bienvenue sur mon portfolio,</p>
           <h1 className="text-5xl md:text-7xl font-display font-bold text-primary leading-tight">
             Je suis Développeuse Front-end React
           </h1>
@@ -36,7 +36,7 @@ const Hero = () => {
             <Button
               size="lg"
               variant="outline"
-              onClick={() => window.open("/cv.pdf", "_blank")}
+              onClick={() => window.open("/CV_2025_Claire_PRIN-GUENON_dev_front.pdf", "_blank")}
               className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
             >
               Télécharger mon CV
@@ -46,6 +46,7 @@ const Hero = () => {
 
         <button
           onClick={scrollToProjects}
+          aria-label= "Voir les Projets"
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
         >
           <ArrowDown className="text-primary" size={32} />

@@ -77,6 +77,7 @@ const Header = () => {
             variant="ghost"
             size="icon"
             className="md:hidden"
+            aria-label={isMobileMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X /> : <Menu />}

@@ -75,7 +75,7 @@ const Parcours = () => {
                     <h4 className="text-xl font-semibold text-primary mb-2">
                       {item.title}
                     </h4>
-                    <p className="text-accent font-medium mb-3">{item.institution}</p>
+                    <p className="text-mutted-foreground font-medium mb-3">{item.institution}</p>
                     <p className="text-foreground leading-relaxed">{item.description}</p>
                   </div>
                 </div>
@@ -108,7 +108,7 @@ const Parcours = () => {
                     <h4 className="text-xl font-semibold text-primary mb-2">
                       {item.title}
                     </h4>
-                    <p className="text-accent font-medium mb-3">{item.company}</p>
+                    <p className="text-mutted-foreground font-medium mb-3">{item.company}</p>
                     <p className="text-foreground leading-relaxed">{item.description}</p>
                   </div>
                 </div>
@@ -120,8 +120,8 @@ const Parcours = () => {
         {/* CV Download */}
         <div className="mt-12 text-center animate-fade-in">
           <a
-            href="/CV.pdf"
-            download
+            href="/CV_2025_Claire_PRIN-GUENON_dev_front.pdf"
+            target="_blank"
             className="inline-flex items-center gap-2 px-8 py-4 bg-accent hover:bg-accent/90 text-accent-foreground rounded-full font-semibold shadow-card hover:shadow-elegant transition-all duration-300"
           >
             <GraduationCap className="h-5 w-5" />

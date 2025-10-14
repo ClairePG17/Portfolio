@@ -80,7 +80,7 @@ const Contact = () => {
               </form>
 
               <div className="mt-8 pt-8 border-t border-border text-center">
-                <p className="text-muted-foreground mb-2">Ou contactez-moi directement par email</p>
+                <p className="text-accent-foreground mb-2">Ou contactez-moi directement par email</p>
                 <a
                   href="mailto:pringuenon.claire@gmail.com"
                   className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
