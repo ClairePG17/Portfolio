@@ -1,6 +1,19 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Card } from "./ui/card";
 import ProjectModal from "./ProjectModal";
+import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@/components/ui/select";
+
+// Hook interne
+function useMediaQuery(query) {
+  const [matches, setMatches] = useState(() => window.matchMedia(query).matches);
+  useEffect(() => {
+    const media = window.matchMedia(query);
+    const listener = () => setMatches(media.matches);
+    media.addEventListener("change", listener);
+    return () => media.removeEventListener("change", listener);
+  }, [query]);
+  return matches;
+}
 
 interface Project {
   id: number;
@@ -38,42 +51,66 @@ const Projects = ({ projects }: ProjectsProps) => {
       ? projects
       : projects.filter((p) => p.category.includes(selectedFilter));
 
+  // Le menu déroulant est affiché pour < 1024px (lg)
+  const showDropdown = useMediaQuery("(max-width: 1023px)");
+
   return (
     <section id="projects" className="py-20 px-4">
       <div className="container mx-auto max-w-7xl">
         <h2 className="text-4xl md:text-5xl font-display font-bold text-center mb-12 text-primary animate-fade-in">
           Mes Projets
         </h2>
-
         {/* Filtres */}
-        <div className="flex flex-wrap justify-center gap-3 mb-12 animate-slide-up">
-          {filters.map((filter) => (
-            <button
-              key={filter}
-              onClick={() => setSelectedFilter(filter)}
-              className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${
-                selectedFilter === filter
-                  ? "bg-accent text-accent-foreground shadow-card"
-                  : "bg-card text-card-foreground hover:bg-accent/20"
-              }`}
-            >
-              {filter}
-            </button>
-          ))}
+        <div className="mb-12 animate-slide-up">
+          {showDropdown ? (
+            <Select value={selectedFilter} onValueChange={setSelectedFilter}>
+              <SelectTrigger className="w-full max-w-xs mx-auto rounded-full bg-card text-card-foreground border border-border shadow-card focus:ring-2 focus:ring-accent transition-all">
+                <SelectValue placeholder="Catégorie" />
+              </SelectTrigger>
+              <SelectContent className="bg-card rounded-lg shadow-card">
+                {filters.map((filter) => (
+               <SelectItem
+               key={filter}
+               value={filter}
+               className="px-4 py-2 text-sm rounded-md hover:bg-accent hover:text-accent-foreground font-medium flex items-center"
+             >
+               <span className="ml-4">{filter}</span>
+             </SelectItem>
+             
+               
+                ))}
+              </SelectContent>
+            </Select>
+          ) : (
+            <div className="flex flex-wrap justify-center gap-3">
+              {filters.map((filter) => (
+                <button
+                  key={filter}
+                  onClick={() => setSelectedFilter(filter)}
+                  className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${
+                    selectedFilter === filter
+                      ? "bg-accent text-accent-foreground shadow-card"
+                      : "bg-card text-card-foreground hover:bg-accent/20"
+                  }`}
+                >
+                  {filter}
+                </button>
+              ))}
+            </div>
+          )}
         </div>
 
         {/* Grille de projets */}
         <div
-          key={selectedFilter}  // <-- clé dynamique pour reset animation au changement
+          key={selectedFilter}
           className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           {filteredProjects.map((project) => (
-  <Card
-    key={project.id}
-    onClick={() => setSelectedProject(project)}
-    className="group cursor-pointer overflow-hidden shadow-xl bg-card hover:shadow-elegant transition-all duration-300 animate-scale-fade-in"
-  >
-              {/* Container with fixed aspect ratio */}
+            <Card
+              key={project.id}
+              onClick={() => setSelectedProject(project)}
+              className="group cursor-pointer overflow-hidden shadow-xl bg-card hover:shadow-elegant transition-all duration-300 animate-scale-fade-in"
+            >
               <div className="relative w-full aspect-video overflow-hidden">
                 <img
                   loading="lazy"
