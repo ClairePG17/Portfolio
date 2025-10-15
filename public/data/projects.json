@@ -26,7 +26,7 @@
       "/assets/images/ohmyfood/Ohmyfood-Responsive_Tablet.png",
       "/assets/images/ohmyfood/Ohmyfood_Desktop.png",
       "/assets/images/ohmyfood/Ohmyfood_Responsive_phone.png",
-      "/assets/images/ohmyfood/Ohmyfood_animation.webm"
+      "/assets/images/ohmyfood/Ohmyfood_animations_video.mp4"
     ],
     "featured": true
   },
@@ -40,7 +40,7 @@
     "github": "https://github.com/ClairePG17/Print-It",
     "images": [
       "/assets/images/printIt/PrintIt_Desktop.png",
-      "assets/images/printIt/printit-animations.webm"
+      "/assets/images/printIt/printIt_animation_video.mp4"
     ],
     "featured": false
   },
@@ -103,7 +103,7 @@
       "/assets/images/kasa/Kasa_details.png",
       "/assets/images/kasa/Kasa_about.png",
       "/assets/images/kasa/Kasa_responsive_phone.png",
-      "public/assets/images/kasa/Kasa_video.webm"
+      "public/assets/images/kasa/kasa_animations_video.mp4"
     ],
     "featured": true
   },
