@@ -5,7 +5,11 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: Github, href: "https://github.com/ClairePG17", label: "GitHub" },
-    { icon: Linkedin, href: "https://www.linkedin.com/in/claire-prin-guenon-a885461b5/", label: "LinkedIn" },
+    {
+      icon: Linkedin,
+      href: "https://www.linkedin.com/in/claire-prin-guenon-a885461b5/",
+      label: "LinkedIn",
+    },
     { icon: Mail, href: "mailto:pringuenon.claire@gmail.com", label: "Email" },
   ];
 
@@ -14,19 +18,20 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center space-y-6">
           <div className="flex gap-6">
-          {socialLinks.map((social) => (
-  <a
-    key={social.label}
-    href={social.href}
-    {...(!/^mailto:/.test(social.href) && { target: "_blank", rel: "noopener noreferrer" })}
-    className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-    aria-label={social.label}
-  >
-    <social.icon size={20} />
-  </a>
-))}
-
-          
+            {socialLinks.map((social) => (
+              <a
+                key={social.label}
+                href={social.href}
+                {...(!/^mailto:/.test(social.href) && {
+                  target: "_blank",
+                  rel: "noopener noreferrer",
+                })}
+                className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                aria-label={social.label}
+              >
+                <social.icon size={20} />
+              </a>
+            ))}
           </div>
 
           <div className="text-center">
@@ -41,4 +46,3 @@ const Footer = () => {
 };
 
 export default Footer;
-

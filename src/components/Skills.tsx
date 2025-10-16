@@ -51,7 +51,7 @@ const Skills = () => (
   <section id="skills" className="py-20 px-4 bg-card">
     <div className="container mx-auto max-w-6xl">
       <h2 className="text-4xl md:text-5xl font-display font-bold text-center mb-16 text-primary animate-fade-in">
-        Compétences
+        Mes Compétences
       </h2>
       <div className="grid md:grid-cols-2 gap-12">
         <div className="animate-slide-up">
