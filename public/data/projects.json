@@ -8,9 +8,9 @@
     "technologies": ["HTML5", "CSS3", "Responsive Design", "Figma"],
     "github": "https://github.com/ClairePG17/Booki",
     "images": [
-      "/assets/images/booki/Booki-responsive-phone.png",
-      "/assets/images/booki/booki-plateforme-reservation-html-css-responsive.png",
-      "/assets/images/booki/Booki-Responsive_Tablette.png"
+      { "src": "/assets/images/booki/Booki-responsive-phone.png", "alt": "Version mobile du site Booki" },
+      { "src": "/assets/images/booki/booki-plateforme-reservation-html-css-responsive.png", "alt": "Accueil desktop Booki" },
+      { "src": "/assets/images/booki/Booki-Responsive_Tablette.png", "alt": "Version tablette du site Booki" }
     ],
     "featured": true
   },
@@ -23,10 +23,10 @@
     "technologies": ["HTML5", "CSS3", "SASS", "Git", "CSS Animations"],
     "github": "https://github.com/ClairePG17/Ohmyfood",
     "images": [
-      "/assets/images/ohmyfood/Ohmyfood-Responsive_Tablet.png",
-      "/assets/images/ohmyfood/Ohmyfood_Desktop.png",
-      "/assets/images/ohmyfood/Ohmyfood_Responsive_phone.png",
-      "/assets/images/ohmyfood/Ohmyfood_animations_video.mp4"
+      { "src": "/assets/images/ohmyfood/Ohmyfood-Responsive_Tablet.png", "alt": "OhMyFood version tablette" },
+      { "src": "/assets/images/ohmyfood/Ohmyfood_Desktop.png", "alt": "OhMyFood version desktop" },
+      { "src": "/assets/images/ohmyfood/Ohmyfood_Responsive_phone.png", "alt": "OhMyFood version mobile" },
+      { "src": "/assets/images/ohmyfood/Ohmyfood_animations_video.mp4", "alt": "Animations CSS OhMyFood" }
     ],
     "featured": true
   },
@@ -39,8 +39,8 @@
     "technologies": ["JavaScript", "DOM", "Algorithmie", "CSS3", "Animations"],
     "github": "https://github.com/ClairePG17/Print-It",
     "images": [
-      "/assets/images/printIt/PrintIt_Desktop.png",
-      "/assets/images/printIt/printIt_animation_video.mp4"
+      { "src": "/assets/images/printIt/PrintIt_Desktop.png", "alt": "Interface desktop Print It" },
+      { "src": "/assets/images/printIt/printIt_animation_video.mp4", "alt": "Carrousel animé Print It" }
     ],
     "featured": false
   },
@@ -53,9 +53,9 @@
     "technologies": ["JavaScript", "API", "Fetch", "HTML5", "CSS3", "DOM", "API"],
     "github": "https://github.com/ClairePG17/Sophie-Bluel",
     "images": [
-      "/assets/images/sophie/Sophie_edition_modal.png",
-      "public/assets/images/sophie/Sophie_edition_ajout-projet.png",
-      "/assets/images/sophie/Sophie_Desktop_Home.png"
+      { "src": "/assets/images/sophie/Sophie_edition_modal.png", "alt": "Sophie Bluel - Edition modal" },
+      { "src": "public/assets/images/sophie/Sophie_edition_ajout-projet.png", "alt": "Sophie Bluel - Ajout projet" },
+      { "src": "/assets/images/sophie/Sophie_Desktop_Home.png", "alt": "Accueil desktop Sophie Bluel" }
     ],
     "featured": true
   },
@@ -68,9 +68,9 @@
     "technologies": ["SEO", "Lighthouse", "HTML5", "CSS3", "Accessibilité", "Wave"],
     "github": "https://github.com/ClairePG17/Nina-Carducci-SEO",
     "images": [
-      "/assets/images/nina/Nina_Desktop.png",
-      "/assets/images/nina/Nina_Lighthouse.png",
-      "/assets/images/nina/Nina_Wave.png"
+      { "src": "/assets/images/nina/Nina_Desktop.png", "alt": "Nina Carducci version desktop" },
+      { "src": "/assets/images/nina/Nina_Lighthouse.png", "alt": "Audit Lighthouse Nina Carducci" },
+      { "src": "/assets/images/nina/Nina_Wave.png", "alt": "Audit Wave Nina Carducci" }
     ],
     "featured": false
   },
@@ -83,9 +83,9 @@
     "technologies": ["JavaScript", "Debug", "Chrome DevTools", "Testing", "Maintenance"],
     "github": "https://github.com/ClairePG17/724-Events",
     "images": [
-      "/assets/images/724events/724_home.png",
-      "/assets/images/724events/724_filtre.png",
-      "assets/images/724events/724_contact-form.png"
+      { "src": "/assets/images/724events/724_home.png", "alt": "Accueil 724Events" },
+      { "src": "/assets/images/724events/724_filtre.png", "alt": "Filtre événementiel 724Events" },
+      { "src": "assets/images/724events/724_contact-form.png", "alt": "Formulaire de contact 724Events" }
     ],
     "featured": false
   },
@@ -98,12 +98,12 @@
     "technologies": ["React", "React Router", "SASS", "CSS Animations", "SPA"],
     "github": "https://github.com/ClairePG17/Kasa",
     "images": [
-      "/assets/images/kasa/Kasa_responsive_tablet.png",
-      "/assets/images/kasa/Kase_home.png",
-      "/assets/images/kasa/Kasa_details.png",
-      "/assets/images/kasa/Kasa_about.png",
-      "/assets/images/kasa/Kasa_responsive_phone.png",
-      "public/assets/images/kasa/kasa_animations_video.mp4"
+      { "src": "/assets/images/kasa/Kasa_responsive_tablet.png", "alt": "Kasa version tablette" },
+      { "src": "/assets/images/kasa/Kase_home.png", "alt": "Accueil desktop Kasa" },
+      { "src": "/assets/images/kasa/Kasa_details.png", "alt": "Page détails Kasa" },
+      { "src": "/assets/images/kasa/Kasa_about.png", "alt": "Page à propos Kasa" },
+      { "src": "/assets/images/kasa/Kasa_responsive_phone.png", "alt": "Version mobile Kasa" },
+      { "src": "public/assets/images/kasa/kasa_animations_video.mp4", "alt": "Animations Kasa" }
     ],
     "featured": true
   },
@@ -116,10 +116,10 @@
     "technologies": ["React", "Redux", "API REST", "JavaScript"],
     "github": "https://github.com/ClairePG17/ArgentBank",
     "images": [
-      "/assets/images/argentBank/ArgentBank_Home.png",
-      "/assets/images/argentBank/ArgentBank_SignIn-form.png",
-      "public/assets/images/argentBank/ArgentBank_Dashboard.png",
-      "public/assets/images/argentBank/ArgentBank_Edit-surname.png"
+      { "src": "/assets/images/argentBank/ArgentBank_Home.png", "alt": "Accueil ArgentBank" },
+      { "src": "/assets/images/argentBank/ArgentBank_SignIn-form.png", "alt": "Formulaire de connexion ArgentBank" },
+      { "src": "public/assets/images/argentBank/ArgentBank_Dashboard.png", "alt": "Dashboard ArgentBank" },
+      { "src": "public/assets/images/argentBank/ArgentBank_Edit-surname.png", "alt": "Edition du nom ArgentBank" }
     ],
     "featured": true
   },
@@ -131,7 +131,7 @@
     "description": "Planification et découpage fonctionnel d’une application de création de menus pour restaurateurs. Rédaction complète des spécifications techniques, présentation de la solution, suivi du développement via outil Kanban. Projet orienté gestion Agile, veille technologique et interactions client.",
     "technologies": ["Gestion de projet", "Kanban", "Agile", "Spécifications", "Jira", "React"],
     "images": [
-      "/assets/images/menuMaker/Menumaker_Dashboard.png"
+      { "src": "/assets/images/menuMaker/Menumaker_Dashboard.png", "alt": "Dashboard MenuMaker Qwenta" }
     ],
     "featured": false
   },
@@ -144,7 +144,7 @@
     "technologies": ["HTML5", "TailWindCSS", "React", "GitHub Pages", "SEO", "TypeScript"],
     "github": "https://github.com/ClairePG17/Portfolio",
     "images": [
-      "/assets/images/portfolio.png"
+      { "src": "/assets/images/portfolio.png", "alt": "Aperçu du Portfolio Web" }
     ],
     "featured": true
   }

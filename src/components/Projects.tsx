@@ -3,18 +3,13 @@ import { Card } from "./ui/card";
 import ProjectModal from "./ProjectModal";
 import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@/components/ui/select";
 
-// Hook interne
-function useMediaQuery(query) {
-  const [matches, setMatches] = useState(() => window.matchMedia(query).matches);
-  useEffect(() => {
-    const media = window.matchMedia(query);
-    const listener = () => setMatches(media.matches);
-    media.addEventListener("change", listener);
-    return () => media.removeEventListener("change", listener);
-  }, [query]);
-  return matches;
+// Interface pour l'image
+interface ProjectImage {
+  src: string;
+  alt: string;
 }
 
+// Interface pour le projet
 interface Project {
   id: number;
   title: string;
@@ -23,11 +18,25 @@ interface Project {
   description: string;
   technologies: string[];
   github: string;
-  images: string[];
+  images: ProjectImage[];
+  featured: boolean;
 }
 
+// Props
 interface ProjectsProps {
   projects: Project[];
+}
+
+// Hook interne pour media query
+function useMediaQuery(query: string) {
+  const [matches, setMatches] = useState(() => window.matchMedia(query).matches);
+  useEffect(() => {
+    const media = window.matchMedia(query);
+    const listener = () => setMatches(media.matches);
+    media.addEventListener("change", listener);
+    return () => media.removeEventListener("change", listener);
+  }, [query]);
+  return matches;
 }
 
 const Projects = ({ projects }: ProjectsProps) => {
@@ -51,7 +60,6 @@ const Projects = ({ projects }: ProjectsProps) => {
       ? projects
       : projects.filter((p) => p.category.includes(selectedFilter));
 
-  // Le menu déroulant est affiché pour < 1024px (lg)
   const showDropdown = useMediaQuery("(max-width: 1023px)");
 
   return (
@@ -69,15 +77,13 @@ const Projects = ({ projects }: ProjectsProps) => {
               </SelectTrigger>
               <SelectContent className="bg-card rounded-lg shadow-card">
                 {filters.map((filter) => (
-               <SelectItem
-               key={filter}
-               value={filter}
-               className="px-4 py-2 text-sm rounded-md hover:bg-accent hover:text-accent-foreground font-medium flex items-center"
-             >
-               <span className="ml-4">{filter}</span>
-             </SelectItem>
-             
-               
+                  <SelectItem
+                    key={filter}
+                    value={filter}
+                    className="px-4 py-2 text-sm rounded-md hover:bg-accent hover:text-accent-foreground font-medium flex items-center"
+                  >
+                    <span className="ml-4">{filter}</span>
+                  </SelectItem>
                 ))}
               </SelectContent>
             </Select>
@@ -114,25 +120,25 @@ const Projects = ({ projects }: ProjectsProps) => {
               <div className="relative w-full aspect-video overflow-hidden">
                 <img
                   loading="lazy"
-                  src={project.images[0]}
-                  alt={project.title}
+                  src={project.images[0].src}
+                  alt={project.images[0].alt}
                   className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-center p-6">
-                  <h3 className="text-2xl font-display font-bold text-primary-foreground mb-2">
-                    {project.title}
-                  </h3>
-                  <p className="text-primary-foreground/90">{project.date}</p>
-                  <div className="flex flex-wrap gap-2 mt-4 justify-center">
-                    {project.category.map((tech) => (
-                      <span
-                        key={tech}
-                        className="px-3 py-1 bg-accent-foreground/20 text-accent-foreground rounded-full text-xs font-medium"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
+              </div>
+              <div className="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-center p-6">
+                <h3 className="text-2xl font-display font-bold text-primary-foreground mb-2">
+                  {project.title}
+                </h3>
+                <p className="text-primary-foreground/90">{project.date}</p>
+                <div className="flex flex-wrap gap-2 mt-4 justify-center">
+                  {project.category.map((tech) => (
+                    <span
+                      key={tech}
+                      className="px-3 py-1 bg-accent-foreground/20 text-accent-foreground rounded-full text-xs font-medium"
+                    >
+                      {tech}
+                    </span>
+                  ))}
                 </div>
               </div>
             </Card>

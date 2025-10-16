@@ -96,9 +96,9 @@ const Skills = () => (
       </div>
       <div className="mt-12 text-center p-8 bg-background rounded-lg shadow-card animate-fade-in">
         <p className="text-lg text-foreground">
-          Passionnée par l’innovation numérique, je me tiens continuellement informée des dernières technologies 
+          Passionnée par l’innovation numérique, je me tiens en permanance informée des dernières technologies 
           et des meilleures pratiques en développement web afin de garantir la qualité, 
-          la performance et l’accessibilité des projets réalisés.
+          la performance, la sécurité et l’accessibilité des projets réalisés.
         </p>
       </div>
     </div>

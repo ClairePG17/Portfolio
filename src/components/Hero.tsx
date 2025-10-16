@@ -21,8 +21,8 @@ const Hero = () => {
             Je suis Développeuse Front-end React
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
-            Passionnée par <span className="text-primary font-semibold">React</span> et le développement front-end moderne.
-            Curieuse et créative je conçois des interfaces web modernes, performantes et accessibles.
+            Passionnée par <span className="text-primary font-semibold">React</span> et le développement front-end moderne,
+            curieuse et créative, je conçois des interfaces web modernes, performantes et accessibles.
             Basée à Toulouse, ouverte au télétravail, je cherche un nouveau défi dans le développement web.
           </p>
           <div className="flex gap-4 justify-center pt-4">

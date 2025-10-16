@@ -3,6 +3,12 @@ import { X, ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
 import { Button } from "./ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "./ui/dialog";
 
+// Nouvelle interface pour les images
+interface ProjectImage {
+  src: string;
+  alt: string;
+}
+
 interface Project {
   id: number;
   title: string;
@@ -11,7 +17,7 @@ interface Project {
   description: string;
   technologies: string[];
   github: string;
-  images: string[];
+  images: ProjectImage[];
 }
 
 interface ProjectModalProps {
@@ -38,7 +44,6 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
             {project.title}
           </DialogTitle>
         </DialogHeader>
-
         {/* Carrousel d'images/vidéos */}
         {project.images.length > 0 && (
           <div className="flex justify-center">
@@ -51,27 +56,27 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                       index === currentImage ? "opacity-100" : "opacity-0"
                     }`}
                   >
-                    {media.endsWith(".mp4") || media.endsWith(".webm") ? (
+                    {media.src.endsWith(".mp4") || media.src.endsWith(".webm") ? (
                       <video
-                        src={media}
+                        src={media.src}
                         className="w-full h-full object-cover"
                         controls
                         loop
                         muted
-                        preload="none" 
+                        preload="none"
+                        aria-label={media.alt}
                       />
                     ) : (
                       <img
-                        src={media}
+                        src={media.src}
                         loading="lazy"
-                        alt={`${project.title} - Image ${index + 1}`}
+                        alt={media.alt}
                         className="w-full h-full object-cover"
                       />
                     )}
                   </div>
                 ))}
               </div>
-
               {project.images.length > 1 && (
                 <>
                   <Button
@@ -114,14 +119,12 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
             </div>
           </div>
         )}
-
         {/* Contenu */}
         <div className="space-y-6">
           <div>
             <h3 className="text-xl font-semibold mb-2 text-primary">Description</h3>
             <p className="text-foreground leading-relaxed">{project.description}</p>
           </div>
-
           <div>
             <h3 className="text-xl font-semibold mb-3 text-primary">Technologies utilisées</h3>
             <div className="flex flex-wrap gap-2">
@@ -135,7 +138,6 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
               ))}
             </div>
           </div>
-
           {project.github && (
             <div>
               <a

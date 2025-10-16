@@ -38,7 +38,7 @@ const About = () => {
                 </p>
                 <p>
                   Mon parcours scientifique me rend rigoureuse et proactive, avec une vraie envie de collaborer 
-                  et d’apprendre dans un environnement <strong className="text-foreground"> agile</strong> ou une équipe tech ambitieuse.
+                  et d’apprendre dans un environnement <strong className="text-foreground"> agile</strong> et avec une équipe tech ambitieuse.
                   Ma curiosité naturelle me pousse à explorer continuellement les dernières 
                   technologies du web.
                 </p>
