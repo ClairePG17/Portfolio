@@ -54,7 +54,7 @@
     "github": "https://github.com/ClairePG17/Sophie-Bluel",
     "images": [
       { "src": "/assets/images/sophie/Sophie_edition_modal.png", "alt": "Sophie Bluel - Edition modal" },
-      { "src": "public/assets/images/sophie/Sophie_edition_ajout-projet.png", "alt": "Sophie Bluel - Ajout projet" },
+      { "src": "/assets/images/sophie/Sophie_edition_ajout-projet.png", "alt": "Sophie Bluel - Ajout projet" },
       { "src": "/assets/images/sophie/Sophie_Desktop_Home.png", "alt": "Accueil desktop Sophie Bluel" }
     ],
     "featured": true
@@ -103,7 +103,7 @@
       { "src": "/assets/images/kasa/Kasa_details.png", "alt": "Page détails Kasa" },
       { "src": "/assets/images/kasa/Kasa_about.png", "alt": "Page à propos Kasa" },
       { "src": "/assets/images/kasa/Kasa_responsive_phone.png", "alt": "Version mobile Kasa" },
-      { "src": "public/assets/images/kasa/kasa_animations_video.mp4", "alt": "Animations Kasa" }
+      { "src": "/assets/images/kasa/kasa_animations_video.mp4", "alt": "Animations Kasa" }
     ],
     "featured": true
   },
@@ -118,8 +118,8 @@
     "images": [
       { "src": "/assets/images/argentBank/ArgentBank_Home.png", "alt": "Accueil ArgentBank" },
       { "src": "/assets/images/argentBank/ArgentBank_SignIn-form.png", "alt": "Formulaire de connexion ArgentBank" },
-      { "src": "public/assets/images/argentBank/ArgentBank_Dashboard.png", "alt": "Dashboard ArgentBank" },
-      { "src": "public/assets/images/argentBank/ArgentBank_Edit-surname.png", "alt": "Edition du nom ArgentBank" }
+      { "src": "/assets/images/argentBank/ArgentBank_Dashboard.png", "alt": "Dashboard ArgentBank" },
+      { "src": "/assets/images/argentBank/ArgentBank_Edit-surname.png", "alt": "Edition du nom ArgentBank" }
     ],
     "featured": true
   },
