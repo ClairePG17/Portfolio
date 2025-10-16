@@ -43,17 +43,6 @@ const About = () => {
                   technologies du web.
                 </p>
               </div>
-
-            <div className="flex flex-wrap gap-3 pt-4">
-              {["React & Redux", "Gestion de projet agile", "SEO", "TailwindCss"].map((skill) => (
-                <span
-                  key={skill}
-                  className="px-4 py-2 bg-accent/20 text-primary rounded-full font-medium"
-                >
-                  {skill}
-                </span>
-              ))}
-            </div>
           </div>
         </div>
       </div>
