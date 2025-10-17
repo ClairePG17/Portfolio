@@ -11,8 +11,7 @@
       { "src": "/assets/images/booki/Booki-responsive-phone.png", "alt": "Version mobile du site Booki" },
       { "src": "/assets/images/booki/booki-plateforme-reservation-html-css-responsive.png", "alt": "Accueil desktop Booki" },
       { "src": "/assets/images/booki/Booki-Responsive_Tablette.png", "alt": "Version tablette du site Booki" }
-    ],
-    "featured": true
+    ]
   },
   {
     "id": 2,
@@ -27,8 +26,7 @@
       { "src": "/assets/images/ohmyfood/Ohmyfood_Desktop.png", "alt": "OhMyFood version desktop" },
       { "src": "/assets/images/ohmyfood/Ohmyfood_Responsive_phone.png", "alt": "OhMyFood version mobile" },
       { "src": "/assets/images/ohmyfood/Ohmyfood_animations_video.mp4", "alt": "Animations CSS OhMyFood" }
-    ],
-    "featured": true
+    ]
   },
   {
     "id": 3,
@@ -41,8 +39,7 @@
     "images": [
       { "src": "/assets/images/printIt/PrintIt_Desktop.png", "alt": "Interface desktop Print It" },
       { "src": "/assets/images/printIt/printIt_animation_video.mp4", "alt": "Carrousel animé Print It" }
-    ],
-    "featured": false
+    ]
   },
   {
     "id": 4,
@@ -56,8 +53,7 @@
       { "src": "/assets/images/sophie/Sophie_edition_modal.png", "alt": "Sophie Bluel - Edition modal" },
       { "src": "/assets/images/sophie/Sophie_edition_ajout-projet.png", "alt": "Sophie Bluel - Ajout projet" },
       { "src": "/assets/images/sophie/Sophie_Desktop_Home.png", "alt": "Accueil desktop Sophie Bluel" }
-    ],
-    "featured": true
+    ]
   },
   {
     "id": 5,
@@ -71,8 +67,7 @@
       { "src": "/assets/images/nina/Nina_Desktop.png", "alt": "Nina Carducci version desktop" },
       { "src": "/assets/images/nina/Nina_Lighthouse.png", "alt": "Audit Lighthouse Nina Carducci" },
       { "src": "/assets/images/nina/Nina_Wave.png", "alt": "Audit Wave Nina Carducci" }
-    ],
-    "featured": false
+    ]
   },
   {
     "id": 6,
@@ -86,8 +81,7 @@
       { "src": "/assets/images/724events/724_home.png", "alt": "Accueil 724Events" },
       { "src": "/assets/images/724events/724_filtre.png", "alt": "Filtre événementiel 724Events" },
       { "src": "assets/images/724events/724_contact-form.png", "alt": "Formulaire de contact 724Events" }
-    ],
-    "featured": false
+    ]
   },
   {
     "id": 7,
@@ -104,8 +98,7 @@
       { "src": "/assets/images/kasa/Kasa_about.png", "alt": "Page à propos Kasa" },
       { "src": "/assets/images/kasa/Kasa_responsive_phone.png", "alt": "Version mobile Kasa" },
       { "src": "/assets/images/kasa/kasa_animations_video.mp4", "alt": "Animations Kasa" }
-    ],
-    "featured": true
+    ]
   },
   {
     "id": 8,
@@ -120,8 +113,7 @@
       { "src": "/assets/images/argentBank/ArgentBank_SignIn-form.png", "alt": "Formulaire de connexion ArgentBank" },
       { "src": "/assets/images/argentBank/ArgentBank_Dashboard.png", "alt": "Dashboard ArgentBank" },
       { "src": "/assets/images/argentBank/ArgentBank_Edit-surname.png", "alt": "Edition du nom ArgentBank" }
-    ],
-    "featured": true
+    ]
   },
   {
     "id": 9,
@@ -132,8 +124,7 @@
     "technologies": ["Gestion de projet", "Kanban", "Agile", "Spécifications", "Jira", "React"],
     "images": [
       { "src": "/assets/images/menuMaker/Menumaker_Dashboard.png", "alt": "Dashboard MenuMaker Qwenta" }
-    ],
-    "featured": false
+    ]
   },
   {
     "id": 10,
@@ -145,7 +136,6 @@
     "github": "https://github.com/ClairePG17/Portfolio",
     "images": [
       { "src": "/assets/images/portfolio.png", "alt": "Aperçu du Portfolio Web" }
-    ],
-    "featured": true
+    ]
   }
 ]
