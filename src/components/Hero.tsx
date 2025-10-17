@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto space-y-8 animate-fade-in-up">
           <p className="text-secondary-foreground tracking-wider uppercase text-sm">
-            Bienvenue sur mon portfolio,
+            Bienvenue sur mon portfolio
           </p>
           <h1 className="text-5xl md:text-7xl font-display font-bold text-primary leading-tight">
             Je suis Développeuse Front-end React
