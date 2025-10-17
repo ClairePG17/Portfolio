@@ -3,13 +3,12 @@ import { Card } from "./ui/card";
 import ProjectModal from "./ProjectModal";
 import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@/components/ui/select";
 
-// Interface pour l'image
+// Interfaces Typescript
 interface ProjectImage {
   src: string;
   alt: string;
 }
 
-// Interface pour le projet
 interface Project {
   id: number;
   title: string;
@@ -22,12 +21,11 @@ interface Project {
   featured: boolean;
 }
 
-// Props
 interface ProjectsProps {
   projects: Project[];
 }
 
-// Hook interne pour media query
+// Hook personnalisé interne pour media query
 function useMediaQuery(query: string) {
   const [matches, setMatches] = useState(() => window.matchMedia(query).matches);
   useEffect(() => {
@@ -39,6 +37,7 @@ function useMediaQuery(query: string) {
   return matches;
 }
 
+// Composant Project
 const Projects = ({ projects }: ProjectsProps) => {
   const [selectedFilter, setSelectedFilter] = useState<string>("Tous");
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);

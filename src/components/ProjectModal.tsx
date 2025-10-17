@@ -3,7 +3,7 @@ import { X, ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
 import { Button } from "./ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "./ui/dialog";
 
-// Nouvelle interface pour les images
+// Interfaces TypeScript
 interface ProjectImage {
   src: string;
   alt: string;
@@ -20,11 +20,13 @@ interface Project {
   images: ProjectImage[];
 }
 
+// Propiété du composant
 interface ProjectModalProps {
   project: Project;
   onClose: () => void;
 }
 
+// Hook d'état et fonctions du carrousel
 const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
   const [currentImage, setCurrentImage] = useState(0);
 
@@ -36,6 +38,7 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
     setCurrentImage((prev) => (prev - 1 + project.images.length) % project.images.length);
   };
 
+  // Affichage de mon composant
   return (
     <Dialog open={true} onOpenChange={onClose}>
       <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto bg-card">
