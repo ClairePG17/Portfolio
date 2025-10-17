@@ -64,9 +64,7 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                         src={media.src}
                         className="w-full h-full object-cover"
                         controls
-                        loop
                         muted
-                        preload="none"
                         aria-label={media.alt}
                       />
                     ) : (
